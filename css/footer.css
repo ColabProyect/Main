@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Configuracion del footer */
+footer{
+    background: rgb(240, 240, 240);
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5;
+    color: rgb(30, 30, 30);
+}
+
+/* Configuracion del contenedor de la informacion del footer */
+
+.infocontainer{height: 220px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: .9em;}
+.infocontainer ul li{list-style: square;}
+.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: rgb(30, 30, 30);}
+.infocontainer ul li a:hover{text-decoration: underline;}
+
+/* Configuracion de los subpaneles dentro de .infocontainer*/
+.contact, .information, .policies{
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.infotext{margin-left: 5px;}
+
+/* Configuracion del texto Copyright al final de la pagina */
+.copyright{text-align: center;}

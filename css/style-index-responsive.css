@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1920px){
+    .mainpnlslogan, .btnxplr, .btnxplr2{
+        font-size: 3em;
+    }
+    .infocontainer{
+        font-size: 1.5em;
+    }
+
+    .compemail, .compinfo{
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .mainpnlslogan, .btnxplr, .compemail, .compinfo, .btnxplr2{
+        font-size: 1.4em;
+    }
+    .infocontainer{
+        font-size: 1em;
+    }
+
+    .contact ul li, .information ul li, .policies ul li{
+        list-style-type: none;
+    }
+
+    .contact ul, .information ul, .policies ul{
+       margin-left: 3px;
+       padding: 0px;
+
+    }
+
+    .pnl2, .pnl3{
+        display: none;
+    }
+
+    .pnl1, .pnl4{
+        width: 100%;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mainpnlslogan, .btnxplr, .compemail, .compinfo, .btnxplr2{
+        font-size: 1.2em;
+    }
+    .infocontainer{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .mainpnlslogan, .btnxplr, .compemail, .compinfo, .btnxplr2{
+        font-size: 1em;
+    }
+}

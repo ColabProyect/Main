@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+*{margin: 0;}
+
+a{text-decoration: none; color: white;}
+
+body{
+    background-image: url(../images/index/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{margin:auto;}
+
+
+/* Configuracion del header */
+header{
+    height: 50px;
+    background: #4E10AE;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 30px 1px;
+}
+
+/*  ---------------------------
+ OCULTAR FOOTER Y PANEL PRINCIPAL
+    --------------------------- */
+
+.panel{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
+/* Nombre de la pagina web */
+.nameWebPage{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+/* Configuracion del boton "Contacto" */
+.buttonContact{
+    float: right;
+    margin-right: 10px;
+    font-size: .8em;
+    background: #73ADCF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+.buttonContact a{text-decoration: none; color: white;}
+.buttonContact:hover{background: #ECB009; transition: 500ms}
+.buttonContact a:link, .buttonContact a:visited{color: white;}
+
+
+/* Configuracion del panel principal */
+.mainPanel{
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+/* Imagen del panel principal */
+.mainPanelImage{
+    height: 200px;
+    width: 200px;
+    margin: 10vh auto 0px auto;
+    background-image: url(../images/index/logo3.png);
+    background-size: cover;
+}
+
+/* Eslogan del panel principal */
+.mainPanelSlogan{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10vh;
+    text-shadow: 1px 1px 10px black;
+    background: rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .mainPanelSlogan{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mainPanelSlogan{
+        font-size: 1.5em;
+    }
+}
+
+/* Configuracion de los botones "Explore nuestras funciones" */
+.buttonExplore, .buttonExplore2{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5vh;
+    text-shadow: 1px 1px 10px black;
+    background: #498DB6;
+    box-shadow: 2px 2px 10px 1px black;
+    transition:500ms;
+}
+
+@media screen and (max-width: 1024px){
+    .buttonExplore, .buttonExplore2{
+        font-size: 1.5em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .buttonExplore, .buttonExplore2{
+        font-size: 1.5em;
+        width: 80%;
+    }
+}
+
+.buttonExplore2{margin-top: 0; margin-bottom: 30px;}
+.buttonExplore:hover, .buttonExplore2:hover{background: #ECB009; transition: 500ms;}
+.buttonContact a:link, .buttonContact a:visited{color:white;}
+.buttonContact a{margin:auto; width: 40vw;}
+
+/* Configuracion del contenedor de paneles */
+.panel{color: black; font-family: Georgia, 'Times New Roman', Times, serif; box-shadow: 0px 0px 20px 2px black;}
+
+/* Configuracion del subcontenedor de paneles 1 */
+.subPanel1{
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+
+/* Configuracion del panel 1 */
+.panel1{
+    float: left;
+    padding: 10px;
+    width: 70%;
+    box-sizing: border-box;
+    height: 100%;
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+/* Configuracion de los titulos de .panel1 y .panel4 */
+.companyAbout, .companyContact{
+    text-align: center;
+    font-size: 1.8em;
+    padding: 20px 5px 20px 5px;
+    box-sizing: border-box;
+}
+
+/* Configuracion de las lineas de .panel1 y .panel4 */
+.line hr{
+    border-width: 3px;
+    margin: auto;
+    width: 50%;
+    border-color: #2B76A2;
+    box-shadow: 0px 3px 10px 0px;
+}
+
+/* Configuracion de los textos dentro de .panel1 y .panel4*/
+.companyInformation, .companyEmail{
+    text-align:justify;
+    padding: 20px 5px 20px 5px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.companyEmail{text-align: center; padding-top: 100px;}
+
+/* Configuracion del panel 2 */ 
+.panel2{
+    float: right;
+    width:28%;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-image: url(../images/index/pnl2.jpg);
+    background-size: cover;
+    box-shadow: 0px 3px 10px 1px black;
+}
+
+/* Configuracion del subcontenedor de paneles 2 */
+.subPanel2{
+    height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+
+/* Configuracion del panel 3 */
+.panel3{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(../images/index/pnl3.jpg);
+    background-size: cover;
+    box-shadow: 0px 3px 10px 1px black;
+}
+
+/* Configuracion del panel 4 */
+.panel4{
+    padding: 10px;
+    float: right;
+    width:68%;
+    box-sizing: border-box;
+    height: 100%;
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+/* Configuracion del footer */
+footer{
+    background: #084B73;
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5;
+}
+
+/* Configuracion del contenedor de la informacion del footer */
+
+.informationContainer{height: 220px;}
+.informationContainer ul li{list-style: square; color: white}
+.informationContainer ul li a, .informationContainer ul li a:link ,.informationContainer ul li a:visited{color: white}
+.informationContainer ul li a:hover{text-decoration: underline;}
+
+/* Configuracion de los subpaneles dentro de .informationContainer*/
+.contact, .information, .policies{
+    float: left;
+    width: 33%;
+    border-right: solid thin black;
+    color: white;
+    height: 100%;
+}
+
+.informationText{margin-left: 5px;}
+
+/* Configuracion del texto Copyright al final de la pagina */
+.copyright{color: white; text-align: center;}

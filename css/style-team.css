@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.container{
+    padding-top: 50px;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #084B73;
+    color: white;
+}
+
+.person{
+    height: 400px;
+    box-sizing: border-box;
+    color: white;
+    background: #084B73;
+    position: relative;
+    z-index: -2;
+}
+
+.description{
+    padding: 20px;
+    width: 50%;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.name{
+    padding-top: 50px;
+    font-size: 2em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.job{
+    text-align: center;
+    font-size: 1em;
+}
+
+.frase{
+    padding-top: 60px;
+    text-align: justify;
+    font-size: 1.7em;
+    color: rgba(255, 255, 255, .9);
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-top: 320px solid transparent;
+    border-left: 150px solid #084B73;
+    border-bottom: 80px solid #084B73;
+    float: left;
+    z-index: 5;
+}
+
+.foto{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    z-index: -1;
+    background-color: coral;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.autoBiography{
+    background-image: url(../images/team/oficina.jpg);
+    background-size: cover;
+    height: 500px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+.autoBiographyContent{
+background: rgba(0, 0, 0, .9);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.autoBiography h2{
+    color: white;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.autoBiography p{
+    color: rgba(255, 255, 255, .9);
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    line-height: 2;
+    text-align: justify;
+}

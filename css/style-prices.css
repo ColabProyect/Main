@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+.mainPanel{
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 500px;
+    background-image: url(../images/prices/services.jpg);
+    background-size: cover;
+}
+
+.mainPanelMessege{
+    margin-left: 10%;
+    padding: 20px;
+    padding-top: 0px;
+    background: #0E6496;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .mainPanelMessege{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mainPanel{
+        background-image: none;
+    }
+
+    .mainPanelMessege{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+.mainPanel h1, .mainPanel h2{
+    font-weight: normal;
+}
+
+.mainPanel h1{
+    padding-top: 200px;
+    color: white;
+    font-size: 2em;
+}
+
+.mainPanel h2{
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.5em;
+}
+
+
+.servicePanel{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #0E6496;
+    height: 400px;
+    color: white;
+}
+
+@media screen and (max-width: 1024px){
+    .servicePanel{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .servicePanel{
+        height: 650px;
+    }
+
+    .extraHeight{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .servicePanel{
+        height: 800px;
+    }
+
+}
+
+.servicePanelLeft{
+    width: 60%;
+    float: left;
+}
+
+@media screen and (max-width: 800px){
+    .servicePanelLeft{
+        width: 100%;
+        float: none;
+    }
+}
+
+.servicePanel h3{
+    padding-top: 80px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .servicePanel h3{
+        padding-top: 20px;
+    }
+}
+
+.servicePanel p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, .8);
+    padding: 0px 40px 0px 40px;
+}
+
+@media screen and (max-width: 600px){
+    .servicePanel p{
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+.servicePanelRight{
+    float: right;
+    padding: 20px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    .servicePanelRight{
+        margin-top: 20px;
+        float: none;
+        width: 100%;
+    }
+}
+
+.servicePanelRight p{
+    text-align: center;
+}
+
+.image{
+    background: pink;
+    width: 250px;
+    height: 180px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+    border: solid medium #ECB009;
+}
+
+.buttonOrder{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    background: #ECB009;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    transition: 0.5s;
+}
+
+.buttonOrder:hover{
+    background: #FFCA39;
+   transition: 0.5s;
+}
+
+.backgroundChange{
+    background: #084B73;
+}
+
+.marginsOff{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.servicePanel .support{
+    text-align: center;
+}

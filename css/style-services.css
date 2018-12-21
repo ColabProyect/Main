@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+.container{max-width: 1980px; margin: auto;}
+
+
+/* Configuración general del panel principal */
+.mainPanel{
+    padding-top: 50px;
+    height: 500px;
+    background-image: url(../images/services/business.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainPanelFrase{
+    width: 40%;
+    background: #0E6496;
+    height: 500px;
+    float: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 600px){
+    .mainPanel{
+        background-image: none;
+    }
+
+    .mainPanelFrase{
+        width: 100%;
+    }
+}
+
+.frase{
+    margin-top: 150px;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 1024px){
+    .frase{
+        margin-top: 120px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .frase{
+        margin-top: 130px;
+        font-size: 1.4em;
+    }
+}
+
+.frase p{
+    padding-bottom: 30px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #0E6496; 
+    border-right: 200px solid transparent;
+    float: left;
+    position: relative;
+}
+
+@media screen and (max-width: 600px){
+    .triangle{
+        display: none;
+    }
+}
+
+/* Configuración de lo titulos */
+
+.servicesMessege h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em; 
+    color: rgb(40, 40, 40);
+}
+
+.servicesMessege h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: rgb(40, 40, 40);
+}
+
+@media screen and (max-width: 600px){
+    .servicesMessege h2{
+        margin-bottom: 20px;
+    }
+}
+
+/* Configuración del panel de servicios */
+
+.servicesPanel, .servicesPanelBottom{
+    box-sizing: border-box;
+    padding: 1%;
+    position: relative;
+    height: 420px;
+}
+
+@media screen and (max-width: 1024px){
+    .servicesPanel, .servicesPanelBottom{
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .servicesPanel, .servicePanelWide, .servicesPanelBottom{
+        height: 100%;
+        padding: 0px;
+    }
+}
+
+.serviceLeft, .servicePanelWide{
+    height: 410px;
+    width: 51%;
+    box-sizing: border-box;
+    background: #084B73;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    float: left;
+}
+
+@media screen and (max-width: 1024px){
+    .serviceLeft, .servicePanelWide{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .serviceLeft{
+        float: none;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 0px;
+        border-radius: initial;
+    }
+}
+
+.serviceImage{
+    margin: 10px auto 10px;
+    width: 80%;
+    height: 200px;
+    background: #ECB009;
+    border: solid medium #ECB009;
+    max-width: 400px;
+}
+
+.description{
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.moreInformationButton{
+    box-sizing: border-box;
+    font-size: .9em;
+    background: #ECB009;
+    width: 200px;
+    margin: 20px auto 10px auto;
+    padding: 10px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    float: left;
+    margin-left: calc(50% - 100px);
+}
+
+.moreInformationButton:hover{
+    background: #FFCA39;
+    transition: 0.5s;
+}
+
+.serviceRight{
+    height: 410px;
+    width: 48%;
+    box-sizing: border-box;
+    background: #084B73;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    float: right;
+}
+
+@media screen and (max-width: 1024px){
+    .serviceRight{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .serviceRight{
+        float: none;
+        width: 100%;
+        height: 490px;
+        border-radius: initial;
+        background: #0E6496;
+    }
+}
+
+.servicesPanelBottom{
+    height: 220px;
+}
+
+.servicePanelWide{
+    width: 100%;
+    height: 170px;
+}
+
+@media screen and (max-width: 1024px){
+    .servicePanelWide{
+        height: 200px;;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .servicePanelWide{
+        height: 300px;
+        margin-bottom: 20px;
+        border-radius: initial;
+    }
+}

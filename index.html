@@ -1,138 +1,105 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Weey, no añadiste las hojas de estilos xDDD-->
-
+<html lang="en">
 <head>
-	<title>Proyecto curso Udemy</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<meta charset="utf-8" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="En BuinessWeb nos dedicamo a la creación y diseño de páginas y sitios web, así como estrategias de marketing digital.">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style-index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="icomoon/style.css" />
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/responsiveMenu.js"></script>
+    <title>BusinessWeb: Marketing y Páginas web para su negocio</title>
 </head>
 <body>
-	<header class="encabezado" role="banner">
-		<div class="contenedor">
-			<a href="#" class="logo">
-				<img src="images/logo.png" alt="Logo del sitio">
-			</a>
-			<nav role="navigation">
-				<ul>
-					<li><a href="#">Nosotros</a></li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Contáctanos</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!--Fin de .encabezado-->
-	<div class="presentacion">
-		<div class="contenedor">
-			<div class="introduccion-presentacion">
-				<h1>EXPERTO HTML & CSS<br><span>
-					Web developer front-end
-				</span></h1>
-				<a href="#" class="aprender-mas">Aprender más</a>
-			</div>
-			<img src="images/computadora.png" alt="Monitor">
-		</div>
-	</div> <!--Fin de .presentación-->
-	<section class="acceso-rapido">
-		<div class="contenedor">
-			<h2>Acceso rápido</h2>
-			<figure>
-				<a href="#" title="Nosotros"><img src="images/ico-nosotros.png" alt="Nosotros"></a>
-				<figcaption><h3><a href="#">Nosotros</a></h3></figcaption>
-			</figure>
-			<figure>
-				<a href="#" title="Servicios"><img src="images/ico-servicios.png" alt="Servicios"></a>
-				<figcaption><h3><a href="#">Servicios</a></h3></figcaption>
-			</figure>
-			<figure>
-				<a href="#" title="Ubicanos"><img src="images/ico-ubicanos.png" alt="Ubicanos"></a>
-				<figcaption><h3><a href="#">Ubícanos</a></h3></figcaption>
-			</figure>
-			<figure>
-				<a href="#" title="Contactanos"><img src="images/ico-contactanos.png" alt="Contactanos"></a>
-				<figcaption><h3><a href="#">Contáctanos</a></h3></figcaption>
-			</figure>
-		</div>
-	</section> <!--Fin de .acceso-rapido-->
-	<div class="bloque-contenido">
-		<div class="contenedor">
-			<main class="articulos" role="main">
-				<h2>Últimas noticias</h2>
-				<article>
-					<img src="images/img-articulo1.jpg">
-					<h1><a href="#">Un perrito blanco</a></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-				</article>
-				<article>
-					<img src="images/img-articulo2.jpg">
-					<h1><a href="#">Un perrito loco</a></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-				</article>
-				<article>
-					<img src="images/img-articulo3.jpg">
-					<h1><a href="#">Un perrito bonito</a></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-				</article>
-			</main>
-			<aside class="complementario" role="complementary">
-				<h2>PRÓXIMOS EVENTOS</h2>
-				<ul>
-					<li><a href="">Perros súper bonitos blancos</a></li>
-					<li><a href="">Las mejores mascotas para casa</a></li>
-					<li><a href="">Veterinarias cercanas</a></li>
-					<li><a href="">Concurso perro del año 2018</a></li>
-					<li><a href="">Las razas de perros más caras</a></li>
-					<li><a href="">¿Cómo cuidar a tu perro si está enfermo?</a></li>
-					<li><a href="">Croquetas baratas para perro en Mercado Libre</a></li>
-					<li><a href="">Jabones para perros</a></li>
-					<li><a href="">¿Cómo saber si tu perro te quiere?</a></li>
-				</ul>
-			</aside>
-		</div>
-	</div> <!--Fin de .bloque-contenido-->
-	<section class="suscripcion">
-		<div class="contenedor">
-			<h2>Manténgase actualizado:</h2>
-			<form action="#">
-				<input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-				<input type="email" name="email" placeholder="Ingresa tu email" required>
-				<input type="submit" value="Registrate" name="registrar">
-			</form>
-		</div>
-	</section> <!--Fin de ..suscripcion-->
-	<footer class="piedepagina" role="contentinfo">
-		<div class="contenedor">
-			<small>Copyright© 2018 Desarrollo web</small>
-			<nav>
-				<ul>
-					<li><a href="#">Políticas del sitio</a></li>
-					<li><a href="#">Preguntas frecuentes</a></li>
-					<li><a href="#">Contáctanos</a></li>
-				</ul>
-			</nav>
-		</div>
-	</footer> <!--Fin de .piedepagina-->
-	<div class="social">
-		<a href="facebook.com" title="Ir a Facebook"><img src="images/ico-face.jpg" alt="Facebook"></a>
-		<a href="youtube.com" title="Ir a YouTube"><img src="images/ico-youtube.jpg" alt="Youtube"></a>
-		<a href="twitter.com" title="Ir a Twitter"><img src="images/ico-twitter.jpg" alt="Twitter"></a> 
-	</div> <!--Fin de .social-->
+    <!-- Contenedor -->
+    <div class="container">
+          <header class="header">
+                <a href="index.html"><div class="nameWebSite"></div></a>
+                <div class="headerButtonsContainer">
+                    <div class="headerButton"><a href="contact.html"><span class="icon-mail2"></span> Contacto</a></div>
+                    <div class="headerButton"><a href="team.html"><span class="icon-users"></span> Equipo</a></div>
+                    <div class="headerButton"><a href="prices.html"><span class="icon-price-tags"></span> Precios</a></div>
+                    <div class="headerButton"><a href="services.html"><span class="icon-earth"></span> Servicios</a></div>
+                </div>
+                <div class="headerButtonsContainerResponsive">
+                    <span class="icon-list2 listButton"></span>
+                    <nav>
+                        <ul>
+                            <a href="services.html"><li><span class="icon-earth"></span> Servicios</li></a>
+                            <a href="prices.html"><li><span class="icon-price-tags"></span> Precios</li></a>
+                            <a href="team.html"><li><span class="icon-users"></span> Equipo</li></a>
+                            <a href="contact.html"><li><span class="icon-mail2"></span> Contacto</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </header> <!-- Fin de header-->
+
+        <!-- main panel -->
+        <div class="mainPanel">
+            <div class="mainPanelImage"></div>
+            <div class="mainPanelSlogan">Diseño de páginas web exclusivas para su negocio</div>
+            <a href="services.html"><div class="buttonExplore">Explore nuestras funciones</div></a>
+        </div><!-- Fin main panel-->
+
+        <!-- panel -->
+        <div class="panel">
+                <div class="subPanel1">
+                    <div class="panel1">
+                           <div class="companyAbout">Informacion de la empresa</div>
+                           <div class="line"><hr></div>
+                           <div class="companyInformation">La misión de BusinessWeb es ser una empresa líder en calidad y satisfacción de sus clientes en cuanto a la venta de páginas web se refiere.
+                            El personal de BusinessWeb está completamente capacitado para diseñar una página o sitio web completamente personalizado bajo su criterio.
+                           </div>
+                    </div>
+                    <div class="panel2"></div>
+                </div>
+    
+                <div class="subPanel2">
+                    <div class="panel3"></div>
+                    <div class="panel4">
+                        <div class="companyContact">¿Cómo contactarnos?</div>
+                        <div class="line"><hr></div>
+                        <div class="companyEmail">Puede contactarnos vía el correo: correodeejemplo@gmail.com</div>
+                    </div>
+                </div>
+            </div><!--Fin panel-->
+
+            <footer><!-- footer -->
+                <a href="services.html"><div class="buttonExplore2">Explore nuestras funciones</div></a>
+                <div class="informationContainer">
+                    <div class="contact">
+                        <div class="informationText">Puede contactarnos en las siguientes redes:</div>
+                        <ul>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Google</a></li>
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="information">
+                        <div class="informationText">Información general:</div>
+                        <ul>
+                            <li><a href="">Soporte</a></li>
+                            <li><a href="">FAQ's</a></li>
+                            <li><a href="">Acerca de BusinessWeb</a></li>
+                        </ul>
+                    </div>
+                    <div class="policies">
+                        <div class="informationText">Políticas:</div>
+                        <ul>
+                            <li><a href="">Políticas de privacidad</a></li>
+                            <li><a href="">Derechos de autor</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">© 2018 BusinessWeb</div>
+            </footer><!-- Fin footer -->
+
+    </div> <!-- Fin de contenedor-->
 </body>
 </html>
-
-
-
-
-
-
-
-

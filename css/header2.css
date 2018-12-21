@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+*{margin: 0;}
+
+a{text-decoration: none; color: white;}
+
+/* Configuracion del header */
+.header{
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: .5s;
+}
+
+.headerAnimation{
+    height: 50px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: .5s;
+    background: rgba(0, 0, 0, .9);
+}
+
+/* Nombre de la pagina web */
+.nameWebSite{
+    margin-top: 5px;
+    margin-left: 10px;
+    float:left;
+    width: 240px;
+    background-image: url("../nameWebPageInverted.png");
+    height: 40px;
+    background-size: cover;
+}
+
+/* Configuración del contenedor de botones del header */
+
+.headerButtonsContainer{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+    float: right;
+    height: 30px;
+}
+
+.headerButtonsContainerResponsive{
+        color: rgb(255, 255, 255);
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+        float: right;
+        height: 30px;
+        display: none;
+        box-sizing: border-box;
+}
+
+@media screen and (max-width: 750px){
+    .headerButtonsContainer{
+        display: none;
+    }
+
+    .headerButtonsContainerResponsive{
+        display: initial;
+    }
+    
+    nav{
+        background: rgba(0, 0, 0, .9);
+        margin: 0;
+        position: relative;
+    }
+
+    nav ul{
+        position: absolute;
+        list-style: none;
+        display:block;
+        padding: 0px;
+        top: 50px;
+        right: -800%;
+    }
+
+    .listButton{
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+        background: rgba(0, 0, 0, 0);
+        transition: .5s;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .listButton:hover{
+        cursor: pointer;
+    }
+
+    .listButtonAnimation{
+        transition: .5;
+        color: black;
+        background: #ECB009;
+    }
+
+    .headerAnimationButton{
+        height: 50px;
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        transition: .5s;
+        background: rgba(0, 0, 0, .9);
+    }
+
+    nav ul li{
+        text-align: center;
+        width: 200px;
+        padding: 30px;
+        margin: 0;
+        background: rgba(0, 0, 0, .9);
+    }
+
+}
+
+/* Configuración de los botones del header */
+.headerButton{
+    float: right;
+    margin-right: 10px;
+    font-size: .7em;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    transition: .5s;
+    text-shadow: 1px 1px 5px black;
+}
+
+.headerButton a{text-decoration: none; color: white;}
+.headerButton:hover{background: #ECB009; transition: 500ms}
+.headerButton a:link, .headerButton a:visited{color: white;}

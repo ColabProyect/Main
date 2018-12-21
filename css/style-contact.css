@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+*{margin: 0;}
+
+a{text-decoration: none; color: white;}
+
+.container{
+    max-width: 1920px;
+    margin: auto;
+}
+
+/* Configuración del panel principal */
+.mainPanel{
+    padding-top: 60px;
+    height: 500px;
+    box-sizing: border-box;
+    background-image: url(../images/contact/contact-background-edited.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.frase{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 190px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px black;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:500px){
+    .uppercase{
+        font-size: 1.2em;
+    }
+
+    .frase{
+        margin-top: 170px;
+        font-size: 1em;
+    }
+
+}
+
+/* Configuración del panel de Contacto */
+.contactPanel{
+    height: 680px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 3px black;
+}
+
+.contactUs{
+    box-sizing: border-box;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.tellUs{
+    font-size: 0.8em;
+}
+
+/* Configuración del formulario */
+
+.inputText{
+    margin: auto;
+    margin-top: 20px;
+    width: 92%;
+    box-sizing: border-box;
+}
+
+
+input[type="text"]{
+    box-sizing: border-box;
+    width: 33%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px){
+    input[type="text"]{
+        padding: 10px;
+        width: 32%;
+    }
+
+    .inputText{
+        width: 100%;
+    }
+}
+
+textarea{
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.contactFormsContainer{
+    margin-top: 30px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: rgb(70, 70, 70);
+}
+
+.buttonSubmit{
+    box-sizing: border-box;
+    margin-top: 30px;
+    float: right;
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px black;
+    border: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(40, 40, 40);
+    padding: 15px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    transition: .5s ease;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    transition:  .5s ease;
+    background: #ECB009;
+}
+
+.location{
+    margin-top: 175px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+/* Configuracion del footer */
+footer{
+    background: rgb(240, 240, 240);
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5;
+    color: rgb(30, 30, 30);
+}
+
+/* Configuracion del contenedor de la informacion del footer */
+
+.infocontainer{height: 220px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: .9em;}
+.infocontainer ul li{list-style: square;}
+.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: rgb(30, 30, 30);}
+.infocontainer ul li a:hover{text-decoration: underline;}
+
+/* Configuracion de los subpaneles dentro de .infocontainer*/
+.contact, .information, .policies{
+    float: left;
+    width: 33%;
+    height: 100%;
+}
+
+.infotext{margin-left: 5px;}
+
+/* Configuracion del texto Copyright al final de la pagina */
+.copyright{text-align: center;}

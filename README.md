@@ -1,2 +1,2 @@
-# Main
-Aquí estarán todos los cambios que hagamos en nuestro proyecto
+# mis_paginas
+Aquí estarán todos mis páginas
