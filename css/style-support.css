@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Configuración del panel principal */
+.mainPanel{
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.mainPanel h1{
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.mainPanel h2{
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.mainPanel p{
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Configuración del formulario */
+
+form{
+    margin: auto;
+    margin-top: 20px;
+    width: 92%;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    box-sizing: border-box;
+    width: 49%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px){
+    input[type="text"]{
+        padding: 10px;
+        width: 49%;
+    }
+
+    form{
+        width: 99%;
+    }
+}
+
+textarea{
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.buttonSubmit{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px black;
+    border: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(40, 40, 40);
+    padding: 15px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    transition: .5s ease;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    transition:  .5s ease;
+    background: #ECB009;
+}
+
+.location{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}

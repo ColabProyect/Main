@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BusinessWeb - Soporte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Hojas de estilo básicas para el header, footer e íconos -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="icomoon/style.css" />
+    <!-- Hoja de estilo principal -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style-support.css" />
+    <!-- Scripts básico para el header -->
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/responsiveMenu.js"></script>
+</head>
+<body>
+     <!-- Configuración del header-->
+     <header class="header">
+            <!-- Configuración del header para escritorio -->
+                <a href="index.html"><div class="nameWebSite"></div></a>
+                <div class="headerButtonsContainer">
+                    <div class="headerButton"><a href="contact.html"><span class="icon-mail2"></span> Contacto</a></div>
+                    <div class="headerButton"><a href="team.html"><span class="icon-users"></span> Equipo</a></div>
+                    <div class="headerButton"><a href="prices.html"><span class="icon-price-tags"></span> Precios</a></div>
+                    <div class="headerButton"><a href="services.html"><span class="icon-earth"></span> Servicios</a></div>
+            </div>
+            <!-- Configuración del header para móvil -->
+            <div class="headerButtonsContainerResponsive">
+                <span class="icon-list2 listButton"></span>
+                <nav>
+                    <ul>
+                        <a href="services.html"><li><span class="icon-earth"></span> Servicios</li></a>
+                        <a href="prices.html"><li><span class="icon-price-tags"></span> Precios</li></a>
+                        <a href="team.html"><li><span class="icon-users"></span> Equipo</li></a>
+                        <a href="contact.html"><li><span class="icon-mail2"></span> Contacto</li></a>
+                    </ul>
+                </nav>
+            </div>    
+        </header> <!-- Fin de header-->
+
+        <!-- Contenedor general -->
+        <div class="container">
+
+            <!-- Panel principal -->
+            <div class="mainPanel">
+                <h1>Soporte</h1>
+                <h2>Contacte con el equipo de BusinessWeb</h2>
+                <p> Porfavor, describa detalladamente su problema relacionado con nuestros servicios para brindarle
+                    una solución.
+                </p>
+            </div> <!-- Fin del panel principal -->
+
+            <!-- Formulario -->
+            <form method="POST" action="php/support.php" id="formData">
+                <!-- Campos del formulario -->
+                <input type="text" maxlength="100" class="useIcomoonFont" name="name" id="name"  placeholder="&#xe971; Tu nombre">
+                <input type="text" maxlength="100"class="useIcomoonFont" name="email" id="email" required="required" placeholder="&#xea83; Tu Email">
+                <textarea class="useIcomoonFont" name="message" id="message" maxlength="5000" placeholder="&#xe96b; Mensaje..."></textarea>
+                <!-- Botón enviar -->
+                <div class="buttonSubmit">
+                    <input type="submit" value="Enviar" name="buttonSubmit" id="buttonSubmit">
+                </div>
+                <!-- Localización -->
+                <div class="location">Saucillo, Chihuahua, México.</div>
+            </form> <!-- Fin del formulario -->
+
+        <!-- Configuración del footer -->
+        <footer>
+            <div class="infocontainer">
+                <div class="contact">
+                    <div class="infotext">Puede contactarnos en las siguientes redes:</div>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Google</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <div class="infotext">Información general:</div>
+                    <ul>
+                        <li><a href="">Soporte</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">Acerca de BusinessWeb</a></li>
+                    </ul>
+                </div>
+                <div class="policies">
+                    <div class="infotext">Políticas:</div>
+                    <ul>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Derechos de autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">© 2018 BusinessWeb</div>
+        </footer><!-- Fin footer -->
+
+        </div> <!-- Fin del contenedor general -->
+    
+</body>
+</html>
