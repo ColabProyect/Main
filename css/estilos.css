@@ -1,0 +1,396 @@
+@charset "UTF-8";
+html {
+  font-size: 15px; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #12AFAF; 
+}
+
+.bienvenidos {
+  background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+  color: white;
+  background-size: cover;
+  height: 100vh;
+  /*Hace que tenga todo el tamaño del inicio viewport height*/
+  display: flex;
+  flex-direction: column; 
+}
+
+.encabezado {
+  background: #111111;
+  color: white;
+  padding: 0.5rem 0; 
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+.encabezado .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+}
+
+.encabezado .logo img {
+  width: 150px;
+  height: auto; 
+}
+
+/*Estilos para el botón buscar y menú*/
+.boton-buscar,
+.boton-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 .5rem;
+  background: transparent;
+  color: #fff; 
+}
+
+.boton-buscar:focus, .boton-menu:focus {
+  /*Le quita la linea naranja que tiene cuando está seleccionado*/
+  outline: 0; 
+}
+
+.boton-buscar {
+  margin-left: auto;
+  /*Para alinear los iconos a la derecha*/
+  margin-right: .8rem; 
+}
+
+/*Estilos bloque buscar*/
+#bloque-buscar {
+  flex: 1 1 100%; 
+}
+
+.contenedor-bloque-buscar {
+  display: flex;
+  height: 3rem;
+  margin: 1rem 0; 
+}
+
+.contenedor-bloque-buscar input[type="text"] {
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem; 
+  flex: 1 1 auto;
+}
+
+.contenedor-bloque-buscar input[type="submit"] {
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  flex: 0 1 auto;
+  background: #12AFAF;
+  color: white; 
+  padding: 0 1rem;
+}
+
+#menu-principal {
+  flex: 1 1 100%; 
+}
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0 0 0; 
+}
+
+#menu-principal ul a {
+  display: block;
+  padding: .8rem 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  /*Hace todo mayusculas*/
+  text-decoration: none;
+  border-top: 1px solid #8c8888;
+}
+
+#menu-principal ul a:hover, #menu-principal ul li.active a {
+  color: #12AFAF; 
+}
+
+.texto-encabezado {
+  display: flex;
+  flex: 1 1 auto;
+  /*Para que la flecha se baje toda*/
+  align-items: center; 
+}
+
+.texto-encabezado .display-4 {
+  margin-top: 1.5rem; 
+}
+
+.btn-primary {
+  background: #12AFAF;
+  border-color: transparent;
+  color: white;
+  margin-top: 1rem;
+  transition: all .5s ease;
+  /*Hace como una animación en el hover*/ 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+  background: #009500;
+  border-color: transparent; 
+}
+
+.flecha-bajar a {
+  display: inline-block;
+  align-item: center;
+  color: white;
+  font-size: 4rem;
+  animation: flecha-animada 2s ease-in-out infinite;
+  /*infinite para que no pare*/ 
+}
+
+@keyframes flecha-animada{ /*Con esto se hacen las animaciones*/
+  from{
+    transform: transalteY(0);
+  }
+  50%{
+    transform: translateY(6px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+/*	Sección agencia	*/
+.agencia {
+  background: #12AFAF;
+  color: white; 
+}
+
+.agencia img {
+  margin: 0 auto;
+  width: 80%;
+  display: block; 
+}
+
+/*# sourceMappingURL=estilos.css.map */
+.tu-mejor-eleccion{
+  color: black;
+}
+.tu-mejor-eleccion h2 span{
+  color: #12AFAF;
+}
+.tu-mejor-eleccion ul, .tu-mejor-eleccion ul li{
+  list-style: none;
+}
+.tu-mejor-eleccion ul li .fa{
+  font-size: 2.3rem; 
+  background: #009500;
+  border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: white;
+  text-align: center;
+}
+
+.tu-mejor-eleccion ul li .contenedor-eleccion h4{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: .8rem;
+}
+.tu-mejor-eleccion ul li{
+  min-height: 9rem;
+}
+/*Sección nuestros servicios*/
+.servicios{
+  background: url("../images/fondo-servicios.jpg") no-repeat center center;
+  color: white;
+  background-size: cover; /*Con esto la imagen cubre completamente*/
+}
+.servicios article{
+  display: flex;
+  align-items: center; /*Alinea en eje secundario*/
+  margin: 1rem 0;
+}
+.servicios h3{
+  flex: 1 1 auto;
+}
+.servicios h3 a{
+  color:white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.servicios h3 a::after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 2rem;
+  margin-left: 1rem;
+  opacity: .5;
+  position: relative;
+  left: 0;
+  transition: all .5s ease;
+}
+.servicios h3 a:hover::after {
+  left:-.5rem;
+  opacity: 1;
+  color: #12AFAF;
+}
+.servicios img{
+  width: 150px;
+  margin-bottom: 1rem;
+}
+#btn-mas-informacion{
+  background: white;
+  color: black;
+}
+@media (max-width: 768px){
+  .servicios img{
+    width: 60px;
+    margin-right: 1rem;
+  }
+  .servicios article h3 a{
+    font-size: 1.3rem;
+  }
+}
+
+/*Sección últimos proyectos*/
+.ultimos-proyectos{
+  color: white;
+  background: #12afaf;
+}
+.ultimos-proyectos ul{
+  list-style: none;
+  text-decoration: none; 
+  padding: 0;
+  
+}
+#imagen{
+  padding: 0;
+  width: 43rem;
+  height: 16rem;
+  border: .5rem solid #111111;
+}
+/*Sección pie de página*/
+.pie-de-pagina{
+  background: #111111;
+  color: white;
+
+}
+.pie-de-pagina ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.pie-de-pagina .fa{
+  color: white;
+  opacity: .5;
+  font-size: 2rem;
+  margin: 0 .5rem;
+}
+/*Flecha ir arriba*/
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: rgb(18, 175, 175);
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+
+  transition: all .5s ease;
+}
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Media queries*/
+
+@media (min-width: 768px){
+  #menu-principal{
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto; 
+    margin-left: auto;
+  }
+  #menu-principal ul{
+    display: flex;
+    margin: 0 0 0 0;
+  }
+  #menu-principal ul li a{
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s ease;
+  }
+  #menu-principal ul li.active a,
+  #menu-principal ul li a:hover{
+    color: #12afaf;
+    border-bottom: 4px solid #12afaf;
+  }
+  .boton-buscar{
+    margin-left: 1rem;
+    margin-right: 0;
+    order: 2;
+  }
+  #bloque-buscar{
+    order: 3;
+    position: absolute;
+    width: 20rem;
+    right: 3rem;
+    top: 2.8rem;
+  }
+}
+/*Servicios, aquí hago la animación de rotar*/
+.servicios img{
+  transition: all 1s ease;
+}
+.servicios article:hover img{
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+}
+.servicios h3 a::after{
+  display: none;
+}
+
+/**/
+@media (min-width: 900px){
+ html{
+  font-size: 16px;
+}
+.tu-mejor-eleccion ul li{
+  display: flex;
+  min-height: 6rem;
+}
+.tu-mejor-eleccion ul li .fa{
+  flex: 0 1 auto;
+  transition: all 1s ease;
+}
+.tu-mejor-eleccion ul li:hover .fa{
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+  background: #12afaf;
+}
+.contenedor-eleccion{
+  flex: 1 0 0px;
+  margin-left: 1rem;
+}
+.tu-mejor-eleccion ul li .contenedor-eleccion h4{  
+  margin: 0;
+}
+#columna-izquierda .fa{
+  order: 1;
+  margin-left: 1rem;
+  margin-right: 0px;
+}
+#columna-derecha p{
+  text-align: right;
+}
+}

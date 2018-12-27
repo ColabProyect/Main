@@ -1,0 +1,360 @@
+@charset "UTF-8";
+html {
+  font-size: 15px; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #111111;
+}
+
+.bienvenidos {
+  background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; 
+}
+
+.encabezado {
+  background: #111111;
+  color: #fff;
+  padding: 0rem 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.encabezado.fondo-menu {
+  background: #4E10AE;
+  padding: 1rem 0; 
+}
+
+.encabezado .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+
+.encabezado .logo img {
+  width: 70px;
+  height: auto; 
+}
+#buisness{
+  margin: 0;
+  display: block;
+}
+#buisness p{
+  margin-top: 0.4rem;
+  color: white;
+  align-self: center;
+  margin-left: 1rem;
+  margin-top: .;
+  font-size: 2rem;
+} 
+.encabezado a{
+  text-decoration: none;
+}
+.encabezado .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*Estilos para el boton: buscar y menu*/
+
+.boton-menu{
+  background: transparent;
+  border: none;
+}
+.boton-menu .fa{
+  font-size: 2rem;
+  color: white;
+  padding: 0;
+  background: transparent;
+  transition: all .5s ease;
+}
+.boton-menu .fa:hover{
+  color: white;
+}
+.boton-menu:focus {
+  /*Le quita la linea naranja que tiene cuando está seleccionado*/
+  outline: 0; 
+}
+
+#menu-principal{
+  flex: 1 1 100%;
+}
+#menu-principal ul{
+  display: contents;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+#menu-principal ul li{
+  border-top: 1px white solid;
+  font-weight: bold;
+  padding: .7rem;
+}
+#menu-principal a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  color: black; 
+}
+
+.texto-encabezado {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; 
+}
+
+.texto-encabezado .display-4 {
+  margin-top: 4rem; 
+}
+
+.texto-encabezado .btn-primary {
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #12AFAF;
+  border-color: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+  background-color: #009500;
+  border-color: transparent; 
+}
+
+.flecha-bajar a {
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  -webkit-animation: flecha-animada 2s ease-in-out infinite;
+  animation: flecha-animada 2s ease-in-out infinite; 
+}
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% 
+  {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); 
+  }
+  to 
+  {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+  }
+}
+
+@keyframes flecha-animada 
+{
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% 
+  {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px); 
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+  }
+}
+
+/*----------------------------------------
+SECCION PIE DE PAGINA
+-----------------------------------------*/
+.piedepagina {
+  background: #111111;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem; 
+}
+
+.piedepagina .redes-sociales {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.piedepagina .redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; 
+}
+
+.piedepagina .redes-sociales a:hover {
+  opacity: 1; 
+}
+
+.ir-arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #12afaf;
+  text-decoration: none;
+  z-index: 99999;
+  line-height: 0;
+  display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; 
+}
+
+/*-------------------------------------------
+ESTILOS DE PÁGINA CONTACTO
+--------------------------------------------*/
+.paginas-internas .bienvenidos {
+  height: 50vh; 
+}
+
+.paginas-internas .ruta {
+  background: #111111;
+  color: #fff; 
+}
+
+.paginas-internas .ruta a {
+  color: #fff;
+  text-decoration: underline; 
+}
+
+.paginas-internas .ruta a:hover {
+  text-decoration: none;
+}
+
+
+
+/*---------------------------------------------
+EMPIEZAN LAS MEDIAS QUERIES
+--------------------------------------------*/
+
+/*Querie para el borde del formulario de contacto*/
+@media (max-width: 544px){
+  .paginas-internas .seccion-formulario .forms{
+    border: 2px black solid;
+    margin: 0 1rem;
+    border-radius: 5px;
+  }
+  .forms label{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+  #menu-principal{
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto; 
+    margin-left: auto;
+    font-size: 17px;
+  }
+  #menu-principal ul{
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 0.1rem;
+  }
+  #menu-principal ul li{
+    border-top: none;
+    align-self: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 1.1rem;
+  }
+  #menu-principal ul li a{
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s ease;
+  }
+  #menu-principal ul li.active a{
+    color: #4E10AE;
+    border-bottom: 4px solid;
+  }
+  #menu-principal ul li.active a:hover{
+    color: white;
+    border-bottom: 4px solid;
+  }
+  #menu-principal ul li a:hover{
+    color: #4E10AE;
+    border-bottom: 4px solid;
+  }
+  #menu-principal ul li a:hover{
+    color: #4E10AE;
+    border-bottom: 4px solid;
+  }
+  /*nuevo-active es la clase del encabezado de sitio.js*/
+  #menu-principal ul li.active.nuevo-active a{
+    color: black;
+    border-bottom: 4px solid;
+  }
+
+
+  .bienvenidos {
+    background: url("../images/fondo-encabezado-grande.jpg") no-repeat center top;
+    background-size: cover;
+  }
+
+  /*# sourceMappingURL=estilos.css.map */

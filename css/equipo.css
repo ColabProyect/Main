@@ -1,0 +1,289 @@
+@charset "UTF-8";
+html{
+	font-size: 15px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: black; 
+}
+.encabezado{
+	display: flex;
+	flex-wrap: wrap;
+	background: #111111;
+	width: 100%;
+	padding: .5rem;
+	transition: all 1s ease;
+}
+.encabezado.fondo-menu{ /*Para la transición del encabezado*/
+	background: #4E10AE;
+	padding: 1rem 0;
+}
+.encabezado .logo img{
+	width: 70px;
+	height: auto;
+}
+#buisness{
+	margin: 0;
+	display: block;
+}
+#buisness p{
+	margin-top: 0.4rem;
+	color: white;
+	align-self: center;
+	margin-left: 1rem;
+	margin-top: .;
+	font-size: 2rem;
+} 
+.encabezado a{
+	text-decoration: none;
+}
+.encabezado .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.texto-encabezado .btn-primary {
+	margin-top: 1rem;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #12AFAF;
+	border-color: transparent;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+	background-color: #111111;
+	border-color: transparent; 
+}
+
+.boton-menu{
+	background: transparent;
+	border: none;
+}
+.boton-menu .fa{
+	font-size: 2.5rem;
+	color: white;
+	padding: 0;
+	background: transparent;
+	transition: all .5s ease;
+}
+.boton-menu .fa:hover{
+	color: white;
+}
+.boton-menu:focus {
+	/*Le quita la linea naranja que tiene cuando está seleccionado*/
+	outline: 0; 
+}
+#menu-principal{
+	flex: 1 1 100%;
+}
+#menu-principal ul{
+	display: contents;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 1rem;
+}
+#menu-principal ul li{
+	border-top: 1px white solid;
+	font-weight: bold;
+	padding: .7rem;
+}
+#menu-principal a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+/*Sección texto encabezado*/
+
+.texto-encabezado{
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	height: 100vh;
+	background: url("../images/pro.jpg") no-repeat center top;
+	background-size: cover;
+	justify-content: space-around;
+	font-family: 'Open Sans', sans-serif;
+}
+#titulo-equipo{
+	font-size: 3.8rem;
+}
+.texto-encabezado {
+	align-items: center;
+}
+.texto-encabezado h2{
+	color: white;
+	
+}
+.btn-primary{
+	background: #4E10AE;
+	border-color: transparent;
+	color: white;
+	margin-top: 1rem;
+	transition: all .5s ease;
+	/*Hace como una animación en el hover*/ 
+}
+.texto-encabezado .flecha-bajar .fa{
+	font-size: 3.5rem;
+	color: white;
+	background: transparent;
+}
+.flecha-bajar{
+	animation: flecha-animada 2s ease-in-out infinite;
+}
+@keyframes flecha-animada{ /*Con esto se hacen las animaciones*/
+	from{
+		transform: transalteY(0);
+	}
+	50%{
+		transform: translateY(6px);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+
+/*Sección equipo*/
+.equipo{
+	background: #111111;
+	color: white;
+}
+.biografias{
+	background: white;
+	color: black;
+}
+.biografias article{
+	display: flex;
+	flex-wrap: wrap;
+}
+.equipo h3{
+	color: #4E10AE;
+}
+.foto img{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	transition: all 1s ease;
+}
+.biografias article:hover img{
+	transform: rotateY(360deg);
+	transform-style: preserve-3d;
+}
+.foto, .descripcion{
+	border-top: 4px solid #4E10AE;
+}
+/*Sección pie de página*/
+.pie-de-pagina{
+	background: #111111;
+	color: white;
+
+}
+.pie-de-pagina ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+.pie-de-pagina .fa{
+	color: white;
+	opacity: .5;
+	font-size: 2rem;
+	margin: 0 .5rem;
+}
+@media (max-width: 544px){
+	div.foto{
+		border: none;
+		display: flex;
+		justify-content: center;
+	}
+	.encabezado .logo img{
+		width: 60px;
+		height: auto;
+	}
+	footer{
+		border: none;
+	}
+	#buisness p{
+		margin-top: 0.4rem;
+		color: white;
+		align-self: center;
+		margin-left: 0rem;
+		margin-top: .;
+		font-size: 1.8rem;
+	}
+	.texto-encabezado h2{
+		font-size: 2rem;
+	}
+	.texto-encabezado p{
+		font-size: .9rem;
+	}
+}
+@media (min-width: 544px){
+	.encabezado .logo img{
+		width: 70px;
+		height: auto;
+	}
+}
+@media (min-width: 768px){
+	.encabezado .logo img{
+		width: 60px;
+		height: auto;
+	}
+	#menu-principal{
+		height: auto !important;
+		display: block;
+		flex: 0 1 auto; 
+		margin-left: auto;
+		font-size: 17px;
+	}
+	#menu-principal ul{
+		display: flex;
+		margin: 0 0 0 0;
+		padding: 0.1rem;
+	}
+	#menu-principal ul li{
+		border-top: none;
+		align-self: center;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		font-size: 1.1rem;
+	}
+	#menu-principal ul li a{
+		padding: .8rem;
+		text-transform: capitalize;
+		margin: 0 .3rem;
+		border-top: 0px;
+		border-bottom: 4px solid transparent;
+		transition: all .5s ease;
+	}
+	#menu-principal ul li.active a{
+		color: #4E10AE;
+		border-bottom: 4px solid;
+	}
+	#menu-principal ul li.active a:hover{
+		color: white;
+		border-bottom: 4px solid;
+	}
+	#menu-principal ul li a:hover{
+		color: #4E10AE;
+		border-bottom: 4px solid;
+	}
+	#menu-principal ul li a:hover{
+		color: #4E10AE;
+		border-bottom: 4px solid;
+	}
+	/*nuevo-active es la clase del encabezado de sitio.js*/
+	#menu-principal ul li.active.nuevo-active a{
+		color: black;
+		border-bottom: 4px solid;
+	}
+}
+
