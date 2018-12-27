@@ -301,6 +301,12 @@ EMPIEZAN LAS MEDIAS QUERIES
     font-weight: bold;
   }
 }
+
+@media screen and (min-width: 1024px){
+  .encabezado .boton-menu i{
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   #menu-principal{
     height: auto !important;

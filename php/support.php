@@ -33,7 +33,7 @@
 
                     #Si la consulta SQL es correcta
                     if($stmt){
-                        #Enlazamos parámetros hgggygyg
+                        #Enlazamos parámetros
                         $stmt->bind_param("sss", $name, $email, $message);
 
                         #Ejecutamos la consulta

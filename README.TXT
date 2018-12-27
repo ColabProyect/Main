@@ -1,24 +1,61 @@
-ESTANDARIZACIÓN DE CÓDIGO.
+REGLAS
 
--> Los colores primarios que se utilizarán serán los del archivo colors.css
--> Las fuentes que se utilizarán en la página son los del archivo fonts.css
+Nombres de las clases css
 
-CÓDIGO CSS.
+- En español.
+- Separar los nombres de las clases con guiones.
+- Nunca usar mayúsculas en las clases.
 
-Las clases css deben ser lo más descriptivas posible, comenzando con minúscula y 
-utilizando la primera letra mayúscula de la siguiente palabra. Además, las clases
-css deberán estar escritas en inglés, por seguir una estandarización universal.
-ejemplo:
+EJEMPLO: 
 
-myFirstCssClass
-exampleCssClass
+mi-clase-css
 
-CÓDIGO JAVASCRIPT
 
-Las variable javascript deberán ser lo más descriptivas posibles, comenzando con minúscula
-y utilizando la primera letra mayúscula de la siguiente palabra. Además, las variables
-javascript deberán estar escritas en inglés, por seguir una estandarización universal.
-ejemplo
 
-var exampleVariable;
-var myFirstJavascriptVariable;
+Variables de javascript
+
+- En español.
+- Sepa
+rar los nombres de las variables con guines bajos.
+- nunca usar mayúsculas.
+
+EJEMPLO
+
+mi_variable_javascript;
+
+
+
+Variables PHP
+
+- En español.
+- Separar los nombres de las variables con guines bajos.
+- nunca usar mayúsculas.
+
+mi_variable_php;
+
+
+
+
+Nombres de archivos:
+
+    CSS 
+    - En español.
+    - Separar los nombres de los archivos por guines.
+    - Nunca usar mayúsculas.
+
+    estilos-servicio.css
+
+
+    javascript
+    - La carpeta se debe llamar js
+    - Separar los nombres de los archivos por guines bajos.
+    - Nunca usar mayúsculas.
+
+    mi-archivo-javascript.js
+
+    PHP
+    - La carpeta debe ser llamada PHP
+    - Separar los nombres de los archivos por guines bajos.
+    - Nunca usar mayúsculas.
+
+    mi-archivo-php.php
