@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/estilosContacto.css">
+
+    <!-- Iconos de icomoon -->
+    <link rel="stylesheet" href="icomoon/style.css">
+
+    <!-- Banderas -->
+    <link rel="stylesheet" href="flags/flags.css">
+
 </head>
 
 <body class="paginas-internas">
@@ -80,42 +87,48 @@
         <div class="row">
 
             <div class="forms col-md-8">
-                <h2 class="mb-2 text-center text-sm-center text-md-left text-lg-left text-xl-left">Contactanos</h2>
-                <p class="text-center text-sm-center text-md-left text-lg-left text-xl-left">Cuentanos qué quieres lograr...</p>
+                <h2 class="mb-2 text-center text-sm-center text-md-left text-lg-left text-xl-left">Contáctanos...</h2>
+                <p class="text-center text-sm-center text-md-left text-lg-left text-xl-left">Cuéntanos que quieres lograr.</p>
                 <form action="#">
 
                     <div class="form-group row">
-                        <label for="nombre" class="col-md-4 col-form-label">Nombre</label>
+                        <label for="nombre" class="col-md-4 col-form-label"> <span class="icon-user"></span> Nombre</label>
 
                         <div class="col-md-8">
-                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" data-toggle="tooltip" data-placement="top" title="Ingrese su nombre completo">
+                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="" data-toggle="tooltip" data-placement="top" title="Ingrese su nombre completo">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="nombre" class="col-md-4 col-form-label"> <span class="icon-phone"></span> Telefono</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="" data-toggle="tooltip" data-placement="top" title="Ingrese su numero de telefono completo">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-md-4 col-form-label"> <span class="icon-mail3"></span> Email</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" type="text" id="email" name="email" placeholder="" data-toggle="tooltip" data-placement="top" title="Ingrese su email">
                         </div>
                     </div>
 
 
                     <div class="form-group row">
-                        <label for="email" class="col-md-4 col-form-label">Email</label>
+                        <label for="mensaje" class="col-md-4 col-form-label"> <span class="icon-bubble"></span> Mensaje</label>
 
                         <div class="col-md-8">
-                            <input class="form-control" type="text" id="email" name="email" placeholder="Ingrese su email" data-toggle="tooltip" data-placement="top" title="Ingrese su email">
-                        </div>
-                    </div>
-
-
-                    <div class="form-group row">
-                        <label for="mensaje" class="col-md-4 col-form-label">Mensaje</label>
-
-                        <div class="col-md-8">
-                            <textarea class="form-control" rows="5" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" data-toggle="tooltip" data-placement="top" title="Ingrese un mensaje"></textarea>
+                            <textarea class="form-control" rows="5" id="mensaje" name="mensaje" placeholder="" data-toggle="tooltip" data-placement="top" title="Ingrese un mensaje"></textarea>
 
                         </div>
                     </div>
 
 
-                    <div class="form-group row">
+                    <div class="form-group row text-center">
                         <div class="col-md-8 offset-md-4">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -124,11 +137,12 @@
 
 
             </div>
-            <div class="col-md-4">
-                <h3>Detalles de contacto</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laborum commodi suscipit vitae eius perferendis consequuntur? Modi nihil aliquam, quas deserunt vitae atque suscipit ratione rerum eveniet. Qui, adipisci ad.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laborum commodi suscipit vitae eius perferendis consequuntur? Modi nihil aliquam, quas deserunt vitae atque suscipit ratione rerum eveniet. Qui, adipisci ad.</p>
-
+            <div class="col-md-4 detalles">
+                <h3>Otras formas de contacto: </h3>
+                <img src="flags/blank.gif" class="flag flag-mx"> +52 166 5723<br>
+                Lunes - Viernes: 3:00pm - 10:00pm <br>
+                Sábado - Domingo: 9:00 am - 10:00pm <br>
+                businessweb@gmail.com<br>
             </div>
 
         </div>

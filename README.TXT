@@ -1,46 +1,44 @@
 REGLAS
 
+
 Nombres de las clases css
 
-- En español.
-- Separar los nombres de las clases con guiones.
-- Nunca usar mayúsculas en las clases.
+    - En español.
+    - Separar los nombres de las clases con guiones.
+    - Nunca usar mayúsculas en las clases.
 
-EJEMPLO: 
+    EJEMPLO: 
 
-mi-clase-css
-
+    mi-clase-css
 
 
 Variables de javascript
 
-- En español.
-- Sepa
-rar los nombres de las variables con guines bajos.
-- nunca usar mayúsculas.
+    - En español.
+    - Separar los nombres de las variables con guines bajos.
+    - nunca usar mayúsculas.
 
-EJEMPLO
+    EJEMPLO:
 
-mi_variable_javascript;
-
+    mi_variable_javascript;
 
 
 Variables PHP
 
-- En español.
-- Separar los nombres de las variables con guines bajos.
-- nunca usar mayúsculas.
+    - En español.
+    - Separar los nombres de las variables con guines bajos.
+    - nunca usar mayúsculas.
 
-mi_variable_php;
+    EJEMPLO:
 
-
+    mi_variable_php;
 
 
 Nombres de archivos:
 
     CSS 
     - En español.
-    - Separar los nombres de los archivos por guines.
+    - Separar los nombres de los archivos por guiones.
     - Nunca usar mayúsculas.
 
     estilos-servicio.css
@@ -53,9 +51,11 @@ Nombres de archivos:
 
     mi-archivo-javascript.js
 
+
     PHP
     - La carpeta debe ser llamada PHP
     - Separar los nombres de los archivos por guines bajos.
     - Nunca usar mayúsculas.
 
     mi-archivo-php.php
+
